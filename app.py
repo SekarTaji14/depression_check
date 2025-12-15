@@ -82,7 +82,7 @@ st.markdown('<div class="hero">Cek Kesehatan Mental Kamu Yuk 🧠✨</div>', uns
 st.markdown(
     '<div class="sub">Isi data singkat di bawah ini untuk melihat <b>prediksi risiko depresi</b>. '
     'Aplikasi ini dibangun menggunakan <span class="badge">Machine Learning</span> '
-    'denga Algoritma <span class="badge">Logistic Regression</span>.</div>',
+    'dengan Algoritma <span class="badge">Logistic Regression</span>.</div>',
     unsafe_allow_html=True
 )
 st.write("")
@@ -241,7 +241,6 @@ if submitted:
         <div class="card">
             <div class="badge">Kategori</div>
             <h2 style="margin:10px 0 4px 0;">😔 Risiko Tinggi</h2>
-            <div class="small">Probabilitas model: <b>{proba:.2f}</b> (threshold final: {best_threshold:.2f})</div>
         </div>
         """, unsafe_allow_html=True)
     else:
@@ -249,7 +248,6 @@ if submitted:
         <div class="card">
             <div class="badge">Kategori</div>
             <h2 style="margin:10px 0 4px 0;">🙂 Risiko Rendah</h2>
-            <div class="small">Probabilitas model: <b>{proba:.2f}</b> (threshold final: {best_threshold:.2f})</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -260,3 +258,4 @@ if submitted:
         st.dataframe(input_raw, use_container_width=True)
 
     st.info("Jika kamu merasa tidak baik-baik saja, pertimbangkan menghubungi layanan konseling kampus/tenaga profesional.")
+
